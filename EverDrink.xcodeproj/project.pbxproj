@@ -9,21 +9,30 @@
 /* Begin PBXBuildFile section */
 		9E22A00828D4AC1400B76457 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A00728D4AC1400B76457 /* AppDelegate.swift */; };
 		9E22A00A28D4AC1400B76457 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A00928D4AC1400B76457 /* SceneDelegate.swift */; };
-		9E22A00C28D4AC1400B76457 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A00B28D4AC1400B76457 /* ViewController.swift */; };
 		9E22A00F28D4AC1400B76457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E22A00D28D4AC1400B76457 /* Main.storyboard */; };
 		9E22A01128D4AC1600B76457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E22A01028D4AC1600B76457 /* Assets.xcassets */; };
 		9E22A01428D4AC1600B76457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E22A01228D4AC1600B76457 /* LaunchScreen.storyboard */; };
+		9E22A02028D4ACC700B76457 /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A01F28D4ACC700B76457 /* Drinks.swift */; };
+		9E22A02328D4ACE100B76457 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02228D4ACE100B76457 /* NetworkManager.swift */; };
+		9E22A02728D4AD8D00B76457 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9E22A02628D4AD8D00B76457 /* Alamofire */; };
+		9E22A02928D4AF3C00B76457 /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02828D4AF3B00B76457 /* DrinksTableViewController.swift */; };
+		9E22A02B28D4AF7000B76457 /* DrinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02A28D4AF7000B76457 /* DrinkCell.swift */; };
+		9E22A02E28D5B32F00B76457 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02D28D5B32E00B76457 /* DrinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9E22A00428D4AC1400B76457 /* EverDrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EverDrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E22A00728D4AC1400B76457 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E22A00928D4AC1400B76457 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9E22A00B28D4AC1400B76457 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E22A00E28D4AC1400B76457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E22A01028D4AC1600B76457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E22A01328D4AC1600B76457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E22A01528D4AC1600B76457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E22A01F28D4ACC700B76457 /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		9E22A02228D4ACE100B76457 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9E22A02828D4AF3B00B76457 /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
+		9E22A02A28D4AF7000B76457 /* DrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCell.swift; sourceTree = "<group>"; };
+		9E22A02D28D5B32E00B76457 /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E22A02728D4AD8D00B76457 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +66,75 @@
 		9E22A00628D4AC1400B76457 /* EverDrink */ = {
 			isa = PBXGroup;
 			children = (
-				9E22A00728D4AC1400B76457 /* AppDelegate.swift */,
-				9E22A00928D4AC1400B76457 /* SceneDelegate.swift */,
-				9E22A00B28D4AC1400B76457 /* ViewController.swift */,
-				9E22A00D28D4AC1400B76457 /* Main.storyboard */,
-				9E22A01028D4AC1600B76457 /* Assets.xcassets */,
-				9E22A01228D4AC1600B76457 /* LaunchScreen.storyboard */,
-				9E22A01528D4AC1600B76457 /* Info.plist */,
+				9E22A01B28D4AC2900B76457 /* ViewControllers */,
+				9E22A02128D4ACCC00B76457 /* Model */,
+				9E22A02428D4ACF400B76457 /* Services */,
+				9E22A02C28D4AF7400B76457 /* Views */,
+				9E22A01C28D4AC3800B76457 /* StoryBoards */,
+				9E22A01D28D4AC6800B76457 /* App */,
+				9E22A01E28D4AC8E00B76457 /* Resources */,
 			);
 			path = EverDrink;
+			sourceTree = "<group>";
+		};
+		9E22A01B28D4AC2900B76457 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A02828D4AF3B00B76457 /* DrinksTableViewController.swift */,
+				9E22A02D28D5B32E00B76457 /* DrinkViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E22A01C28D4AC3800B76457 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A00D28D4AC1400B76457 /* Main.storyboard */,
+				9E22A01228D4AC1600B76457 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		9E22A01D28D4AC6800B76457 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A01528D4AC1600B76457 /* Info.plist */,
+				9E22A00728D4AC1400B76457 /* AppDelegate.swift */,
+				9E22A00928D4AC1400B76457 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9E22A01E28D4AC8E00B76457 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A01028D4AC1600B76457 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9E22A02128D4ACCC00B76457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A01F28D4ACC700B76457 /* Drinks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E22A02428D4ACF400B76457 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A02228D4ACE100B76457 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9E22A02C28D4AF7400B76457 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E22A02A28D4AF7000B76457 /* DrinkCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,9 @@
 			dependencies = (
 			);
 			name = EverDrink;
+			packageProductDependencies = (
+				9E22A02628D4AD8D00B76457 /* Alamofire */,
+			);
 			productName = EverDrink;
 			productReference = 9E22A00428D4AC1400B76457 /* EverDrink.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 9E229FFB28D4AC1400B76457;
+			packageReferences = (
+				9E22A02528D4AD8D00B76457 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9E22A00528D4AC1400B76457 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E22A00C28D4AC1400B76457 /* ViewController.swift in Sources */,
 				9E22A00828D4AC1400B76457 /* AppDelegate.swift in Sources */,
+				9E22A02928D4AF3C00B76457 /* DrinksTableViewController.swift in Sources */,
+				9E22A02E28D5B32F00B76457 /* DrinkViewController.swift in Sources */,
+				9E22A02328D4ACE100B76457 /* NetworkManager.swift in Sources */,
+				9E22A02028D4ACC700B76457 /* Drinks.swift in Sources */,
+				9E22A02B28D4AF7000B76457 /* DrinkCell.swift in Sources */,
 				9E22A00A28D4AC1400B76457 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,12 +369,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52V9YXPJQB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EverDrink/Info.plist;
+				INFOPLIST_FILE = EverDrink/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EverDrink;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,12 +399,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 52V9YXPJQB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EverDrink/Info.plist;
+				INFOPLIST_FILE = EverDrink/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EverDrink;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +442,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E22A02528D4AD8D00B76457 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E22A02628D4AD8D00B76457 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E22A02528D4AD8D00B76457 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E229FFC28D4AC1400B76457 /* Project object */;
 }
