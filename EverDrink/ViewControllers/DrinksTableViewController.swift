@@ -20,7 +20,7 @@ class DrinksTableViewController: UITableViewController {
     //MARK: - ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupRefreshControl()
         setUI()
         getData()
         tableView.delegate = self
@@ -81,7 +81,7 @@ class DrinksTableViewController: UITableViewController {
     }
     
     
-    //MARK: - Networking
+    //MARK: - Networking and RefreshControl
     @objc private func getData() {
         NetworkManager.shared.fetchWithAlamofire(Link.apiLink.rawValue, prefix: prefix ?? "") { result in
             switch result {
@@ -103,6 +103,7 @@ class DrinksTableViewController: UITableViewController {
     private func setupRefreshControl() {
         refreshControl = UIRefreshControl()
         refreshControl?.attributedTitle = NSAttributedString(string: "Reload Data")
+        filteredDrinks = []
         refreshControl?.addTarget(self, action: #selector(getData), for: .valueChanged)
     }
     
@@ -137,7 +138,9 @@ extension DrinksTableViewController: UISearchBarDelegate {
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        filteredDrinks = drinks
+        filteredDrinks = []
+        getData()
+        tableView.reloadData()
     }
     
     

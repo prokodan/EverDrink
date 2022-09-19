@@ -42,7 +42,7 @@ class NetworkManager {
         
     }
     
-    func fetchImageWithAlamofire(_ url: String, completion: @escaping(Result<Data, NetworkError>) -> Void) {
+    func fetchImageWithAlamofire(_ url: URL, completion: @escaping(Result<Data, NetworkError>) -> Void) {
         AF.request(url)
             .validate()
             .responseData { dataResponse in

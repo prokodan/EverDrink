@@ -18,6 +18,7 @@
 		9E22A02928D4AF3C00B76457 /* DrinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02828D4AF3B00B76457 /* DrinksTableViewController.swift */; };
 		9E22A02B28D4AF7000B76457 /* DrinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02A28D4AF7000B76457 /* DrinkCell.swift */; };
 		9E22A02E28D5B32F00B76457 /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E22A02D28D5B32E00B76457 /* DrinkViewController.swift */; };
+		9EAAA19928D871ED0051E0DA /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAAA19828D871ED0051E0DA /* ImageCache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		9E22A02828D4AF3B00B76457 /* DrinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksTableViewController.swift; sourceTree = "<group>"; };
 		9E22A02A28D4AF7000B76457 /* DrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCell.swift; sourceTree = "<group>"; };
 		9E22A02D28D5B32E00B76457 /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
+		9EAAA19828D871ED0051E0DA /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				9E22A02228D4ACE100B76457 /* NetworkManager.swift */,
+				9EAAA19828D871ED0051E0DA /* ImageCache.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				9E22A00828D4AC1400B76457 /* AppDelegate.swift in Sources */,
 				9E22A02928D4AF3C00B76457 /* DrinksTableViewController.swift in Sources */,
+				9EAAA19928D871ED0051E0DA /* ImageCache.swift in Sources */,
 				9E22A02E28D5B32F00B76457 /* DrinkViewController.swift in Sources */,
 				9E22A02328D4ACE100B76457 /* NetworkManager.swift in Sources */,
 				9E22A02028D4ACC700B76457 /* Drinks.swift in Sources */,

@@ -38,6 +38,9 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G7M-b3-5rF">
                                                     <rect key="frame" x="0.0" y="0.0" width="210" height="284"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="210" id="8N3-Ca-b9f"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="T7P-YG-mjq">
                                                     <rect key="frame" x="215" y="0.0" width="183" height="284"/>
@@ -150,6 +153,7 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1W-mL-Gzx">
                                                 <rect key="frame" x="8" y="8" width="186" height="342"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" constant="186" id="2tZ-NJ-U8u"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="342" id="C9a-eP-Xh6"/>
                                                 </constraints>
                                             </imageView>
