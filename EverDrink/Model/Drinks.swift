@@ -25,7 +25,6 @@ struct Drinks: Codable {
 
 struct Drink: Codable {
     
-    
     let strDrink: String
     let strCategory: String
     let strGlass: String

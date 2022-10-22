@@ -17,7 +17,7 @@ class DrinksTableViewController: UITableViewController {
     private var filteredDrinks: [Drink] = []
     private var prefix: String?
     
-    //MARK: - ViewDidLoad
+    //MARK: - VC Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupRefreshControl()
@@ -39,22 +39,17 @@ class DrinksTableViewController: UITableViewController {
     }
     
 
-    // MARK: - Table view data source
+    // MARK: - TableView DataSource
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return filteredDrinks.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "drinkCell", for: indexPath) as? DrinkCell else {return UITableViewCell()}
         let drink = filteredDrinks[indexPath.row]
         cell.configure(with: drink)
         cell.layer.cornerRadius = 20
-        
-
-        
 
         return cell
     }
@@ -63,7 +58,6 @@ class DrinksTableViewController: UITableViewController {
         300
     }
     
-
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let drink = filteredDrinks[indexPath.row]
         performSegue(withIdentifier: "goToDrink", sender: drink)
@@ -98,16 +92,13 @@ class DrinksTableViewController: UITableViewController {
             }
         }
     }
-    
-    
+
     private func setupRefreshControl() {
         refreshControl = UIRefreshControl()
         refreshControl?.attributedTitle = NSAttributedString(string: "Reload Data")
         filteredDrinks = []
         refreshControl?.addTarget(self, action: #selector(getData), for: .valueChanged)
     }
-    
-    
 }
 
 

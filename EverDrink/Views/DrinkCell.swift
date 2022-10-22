@@ -9,12 +9,14 @@ import UIKit
 
 class DrinkCell: UITableViewCell {
 
+    //MARK: - IBOutlets
     @IBOutlet var labelDrink: UILabel!
     @IBOutlet var categoryDrink: UILabel!
     @IBOutlet var glassDrink: UILabel!
     @IBOutlet var alcoholicDrink: UILabel!
     @IBOutlet var drinkImage: UIImageView!
     
+    //MARK: - Private Properties
     private var imageURL: URL? {
         didSet {
             drinkImage.image = nil
@@ -24,30 +26,20 @@ class DrinkCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         drinkImage.layer.cornerRadius = 20
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-    
+    //MARK: - Public Methods
     func configure(with drink: Drink) {
-        
         labelDrink.text = drink.strDrink
         categoryDrink.text = drink.strCategory
         glassDrink.text = drink.strGlass
         alcoholicDrink.text = drink.strAlcoholic
         
         imageURL = URL(string: drink.strDrinkThumb)
-        
-        
     }
     
-    
+   //MARK: - Private Methods
     private func updateImage() {
         guard let imageURL = imageURL else {return}
         getImage(from: imageURL) { result in

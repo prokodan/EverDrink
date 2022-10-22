@@ -9,8 +9,8 @@ import UIKit
 
 class DrinkViewController: UIViewController {
     
+    //MARK: - IBOutlets
     @IBOutlet var tableView: UITableView!
-    
     
     @IBOutlet var imageView: UIView!
     @IBOutlet var drinkView: UIView!
@@ -22,11 +22,12 @@ class DrinkViewController: UIViewController {
     @IBOutlet var drinkAlcoholic: UILabel!
     @IBOutlet var drinkInstructions: UILabel!
     
+    //MARK: - Public Properties
     var drink: Drink!
     var drinkImageVariable: UIImage!
     var ingredientsMeasuresDict: [String?:String?] = ["":""]
 
-    
+    //MARK: - VC Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -35,15 +36,13 @@ class DrinkViewController: UIViewController {
         
     }
     
+    //MARK: - Private Methods
     private func setupUI() {
         ingredientsMeasuresDict = drink.dictionaryApending()
 
         navigationItem.title = drink.strDrink
-        
         imageView.layer.cornerRadius = 20
-        
         drinkView.layer.cornerRadius = 20
-        
         descriptionView.layer.cornerRadius = 20
         drinkImage.layer.cornerRadius = 20
         
@@ -52,15 +51,11 @@ class DrinkViewController: UIViewController {
         drinkGlass.text = drink.strGlass
         drinkAlcoholic.text = drink.strAlcoholic
         drinkInstructions.text = drink.strInstructions
-        
     }
 }
     //MARK: - TableView DataSource, Delegate Methods
 extension DrinkViewController: UITableViewDelegate, UITableViewDataSource {
 
-    
-
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         ingredientsMeasuresDict.count
     }
@@ -80,10 +75,6 @@ extension DrinkViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-
-    
-    
-
 }
     
     
